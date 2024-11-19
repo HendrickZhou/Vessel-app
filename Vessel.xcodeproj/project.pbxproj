@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8837E762CEC1D830048B213 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C8837E752CEC1D830048B213 /* .gitignore */; };
 		C8B3550D2CB827EB008E99C5 /* VesselApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B3550C2CB827EB008E99C5 /* VesselApp.swift */; };
 		C8B3550F2CB827EB008E99C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B3550E2CB827EB008E99C5 /* ContentView.swift */; };
 		C8B355112CB827EE008E99C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B355102CB827EE008E99C5 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C8837E752CEC1D830048B213 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		C8B355092CB827EB008E99C5 /* Vessel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vessel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B3550C2CB827EB008E99C5 /* VesselApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VesselApp.swift; sourceTree = "<group>"; };
 		C8B3550E2CB827EB008E99C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +37,7 @@
 		C8B355002CB827EB008E99C5 = {
 			isa = PBXGroup;
 			children = (
+				C8837E752CEC1D830048B213 /* .gitignore */,
 				C8B3550B2CB827EB008E99C5 /* Vessel */,
 				C8B3550A2CB827EB008E99C5 /* Products */,
 			);
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8B355142CB827EE008E99C5 /* Preview Assets.xcassets in Resources */,
+				C8837E762CEC1D830048B213 /* .gitignore in Resources */,
 				C8B355112CB827EE008E99C5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
