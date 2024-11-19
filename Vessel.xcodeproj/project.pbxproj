@@ -3,22 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C8837E762CEC1D830048B213 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C8837E752CEC1D830048B213 /* .gitignore */; };
+		C8837E7B2CEC1FD70048B213 /* ServerLet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8837E772CEC1FD70048B213 /* ServerLet.swift */; };
+		C8837E7C2CEC1FD70048B213 /* Codec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8837E782CEC1FD70048B213 /* Codec.swift */; };
+		C8837E7D2CEC1FD70048B213 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8837E792CEC1FD70048B213 /* SetupView.swift */; };
+		C8837E7E2CEC1FD70048B213 /* BLEController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8837E7A2CEC1FD70048B213 /* BLEController.swift */; };
+		C8837E812CEC20300048B213 /* QOA in Frameworks */ = {isa = PBXBuildFile; productRef = C8837E802CEC20300048B213 /* QOA */; };
 		C8B3550D2CB827EB008E99C5 /* VesselApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B3550C2CB827EB008E99C5 /* VesselApp.swift */; };
-		C8B3550F2CB827EB008E99C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B3550E2CB827EB008E99C5 /* ContentView.swift */; };
 		C8B355112CB827EE008E99C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B355102CB827EE008E99C5 /* Assets.xcassets */; };
 		C8B355142CB827EE008E99C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B355132CB827EE008E99C5 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C8837E752CEC1D830048B213 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		C8837E772CEC1FD70048B213 /* ServerLet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerLet.swift; sourceTree = "<group>"; };
+		C8837E782CEC1FD70048B213 /* Codec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Codec.swift; sourceTree = "<group>"; };
+		C8837E792CEC1FD70048B213 /* SetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		C8837E7A2CEC1FD70048B213 /* BLEController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEController.swift; sourceTree = "<group>"; };
 		C8B355092CB827EB008E99C5 /* Vessel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vessel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B3550C2CB827EB008E99C5 /* VesselApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VesselApp.swift; sourceTree = "<group>"; };
-		C8B3550E2CB827EB008E99C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C8B355102CB827EE008E99C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8B355132CB827EE008E99C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -28,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8837E812CEC20300048B213 /* QOA in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				C8B3550C2CB827EB008E99C5 /* VesselApp.swift */,
-				C8B3550E2CB827EB008E99C5 /* ContentView.swift */,
+				C8837E7A2CEC1FD70048B213 /* BLEController.swift */,
+				C8837E782CEC1FD70048B213 /* Codec.swift */,
+				C8837E772CEC1FD70048B213 /* ServerLet.swift */,
+				C8837E792CEC1FD70048B213 /* SetupView.swift */,
 				C8B355102CB827EE008E99C5 /* Assets.xcassets */,
 				C8B355122CB827EE008E99C5 /* Preview Content */,
 			);
@@ -86,6 +97,9 @@
 			dependencies = (
 			);
 			name = Vessel;
+			packageProductDependencies = (
+				C8837E802CEC20300048B213 /* QOA */,
+			);
 			productName = Vessel;
 			productReference = C8B355092CB827EB008E99C5 /* Vessel.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +128,9 @@
 				Base,
 			);
 			mainGroup = C8B355002CB827EB008E99C5;
+			packageReferences = (
+				C8837E7F2CEC20300048B213 /* XCLocalSwiftPackageReference "Vessel/QOA" */,
+			);
 			productRefGroup = C8B3550A2CB827EB008E99C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,8 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8B3550F2CB827EB008E99C5 /* ContentView.swift in Sources */,
+				C8837E7C2CEC1FD70048B213 /* Codec.swift in Sources */,
 				C8B3550D2CB827EB008E99C5 /* VesselApp.swift in Sources */,
+				C8837E7D2CEC1FD70048B213 /* SetupView.swift in Sources */,
+				C8837E7B2CEC1FD70048B213 /* ServerLet.swift in Sources */,
+				C8837E7E2CEC1FD70048B213 /* BLEController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +368,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C8837E7F2CEC20300048B213 /* XCLocalSwiftPackageReference "Vessel/QOA" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vessel/QOA;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C8837E802CEC20300048B213 /* QOA */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = QOA;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C8B355012CB827EB008E99C5 /* Project object */;
 }
