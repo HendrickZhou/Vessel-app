@@ -11,7 +11,7 @@ import SwiftUI
 struct VesselApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SetupView()
         }
     }
 }
