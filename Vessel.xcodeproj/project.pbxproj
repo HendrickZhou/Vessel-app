@@ -12,7 +12,7 @@
 		C8837E7C2CEC1FD70048B213 /* Codec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8837E782CEC1FD70048B213 /* Codec.swift */; };
 		C8837E7D2CEC1FD70048B213 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8837E792CEC1FD70048B213 /* SetupView.swift */; };
 		C8837E7E2CEC1FD70048B213 /* BLEController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8837E7A2CEC1FD70048B213 /* BLEController.swift */; };
-		C8837E812CEC20300048B213 /* QOA in Frameworks */ = {isa = PBXBuildFile; productRef = C8837E802CEC20300048B213 /* QOA */; };
+		C8837E862CEC21DC0048B213 /* QOA in Frameworks */ = {isa = PBXBuildFile; productRef = C8837E832CEC21AB0048B213 /* QOA */; };
 		C8B3550D2CB827EB008E99C5 /* VesselApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B3550C2CB827EB008E99C5 /* VesselApp.swift */; };
 		C8B355112CB827EE008E99C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B355102CB827EE008E99C5 /* Assets.xcassets */; };
 		C8B355142CB827EE008E99C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B355132CB827EE008E99C5 /* Preview Assets.xcassets */; };
@@ -31,23 +31,31 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C8B355062CB827EB008E99C5 /* Frameworks */ = {
+		C8837E852CEC21BF0048B213 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8837E812CEC20300048B213 /* QOA in Frameworks */,
+				C8837E862CEC21DC0048B213 /* QOA in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8837E822CEC21AB0048B213 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C8B355002CB827EB008E99C5 = {
 			isa = PBXGroup;
 			children = (
 				C8837E752CEC1D830048B213 /* .gitignore */,
 				C8B3550B2CB827EB008E99C5 /* Vessel */,
 				C8B3550A2CB827EB008E99C5 /* Products */,
+				C8837E822CEC21AB0048B213 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,8 +97,8 @@
 			buildConfigurationList = C8B355172CB827EE008E99C5 /* Build configuration list for PBXNativeTarget "Vessel" */;
 			buildPhases = (
 				C8B355052CB827EB008E99C5 /* Sources */,
-				C8B355062CB827EB008E99C5 /* Frameworks */,
 				C8B355072CB827EB008E99C5 /* Resources */,
+				C8837E852CEC21BF0048B213 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -98,7 +106,7 @@
 			);
 			name = Vessel;
 			packageProductDependencies = (
-				C8837E802CEC20300048B213 /* QOA */,
+				C8837E832CEC21AB0048B213 /* QOA */,
 			);
 			productName = Vessel;
 			productReference = C8B355092CB827EB008E99C5 /* Vessel.app */;
@@ -377,8 +385,9 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C8837E802CEC20300048B213 /* QOA */ = {
+		C8837E832CEC21AB0048B213 /* QOA */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = C8837E7F2CEC20300048B213 /* XCLocalSwiftPackageReference "Vessel/QOA" */;
 			productName = QOA;
 		};
 /* End XCSwiftPackageProductDependency section */
